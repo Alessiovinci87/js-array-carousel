@@ -39,3 +39,17 @@ body {
     opacity: 1;
 }
 
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-left,
+.arrow-right {
+    font-size: 2rem;
+    padding: .625rem;
+}

@@ -12,6 +12,18 @@ function showImage(index) {
 
 }
 
+function nextImage() {
+    activeIndex = (activeIndex + 1) % images.length;
+    showImage(activeIndex);
+  }
+  
+  function previousImage() {
+    activeIndex = (activeIndex - 1 + images.length) % images.length;
+    showImage(activeIndex);
+  }
+  
+  document.querySelector('.arrow-left').addEventListener('click', previousImage);
+  document.querySelector('.arrow-right').addEventListener('click', nextImage);
 
 
 
